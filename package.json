@@ -1,12 +1,15 @@
 {
   "name": "photo_app",
+  "homepage": "https://madishak.github.io/photo_app_toolkit/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
@@ -19,6 +22,7 @@
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.10.2",
+    "gh-pages": "^6.3.0",
     "vite": "^7.0.4"
   }
 }
